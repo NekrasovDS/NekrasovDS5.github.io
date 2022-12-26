@@ -1,19 +1,21 @@
+nes (18 sloc)  495 Bytes
+
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>Калькулятор товаров стоимость-количество</title>
-<script src ="script.js"></script>
+    <meta charset="utf-8" />
+    <title>Задача 5</title>
 </head>
 <body>
-<form>
-<label for="cost">Cost is: </label>
-<input name="field1" id="cost" type="text" />
-<label for="number">Number is: </label>
-<input name="field2" id="number" type="text" />
-<button id="pushbutton" onclick="return key()";>Buy now</button>
-</form>
-<div id="last"></div>
+    <form>
+        <label>Price: </label>
+        <input name="field1" id="price" type="text" />
+        <label>Count: </label>
+        <input name="field2" id="count" type="text" />
+        <button type="button" id="button1" onclick="return click1();">Buy</button>
+    </form>
+    <div id="result">...</div>
+    <script src="script.js"></script>
 </body>
 </html>
